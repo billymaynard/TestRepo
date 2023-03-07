@@ -16,4 +16,16 @@ class OperacionesTDDTest {
         int respuesta = test.suma("1");
         Assertions.assertEquals(1,respuesta);
     }
+    @Test
+    void TestCdelPunto4(){
+        OperacionesTDD test = new OperacionesTDD();
+        int respuesta = test.suma("1,2");
+        Assertions.assertEquals(3,respuesta);
+    }
+    @Test
+    void TestDdelPunto4(){
+        OperacionesTDD test = new OperacionesTDD();
+        int respuesta = test.suma("1,1,2");
+        Assertions.assertEquals(4,respuesta);
+    }
 }
