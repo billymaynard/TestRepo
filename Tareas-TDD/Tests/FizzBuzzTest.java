@@ -22,4 +22,15 @@ public class FizzBuzzTest {
         //Assert
         Assertions.assertEquals("Fizz",resultado1);
     }
+    @Test
+    void Testpara4y5(){
+        //Arrange
+        FizzBuzz fizz = new FizzBuzz();
+        //Act
+        String resultado1 =fizz.calcular(4);
+        String resultado2 =fizz.calcular(5);
+        //Assert
+        Assertions.assertEquals("4",resultado1);
+        Assertions.assertEquals("Buzz",resultado2);
+    }
 }
