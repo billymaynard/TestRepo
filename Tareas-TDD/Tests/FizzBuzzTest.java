@@ -13,4 +13,13 @@ public class FizzBuzzTest {
         Assertions.assertEquals("1",resultado1);
         Assertions.assertEquals("2",resultado2);
     }
+    @Test
+    void Testpara3(){
+        //Arrange
+        FizzBuzz fizz = new FizzBuzz();
+        //Act
+        String resultado1 =fizz.calcular(3);
+        //Assert
+        Assertions.assertEquals("Fizz",resultado1);
+    }
 }
