@@ -33,4 +33,36 @@ public class FizzBuzzTest {
         Assertions.assertEquals("4",resultado1);
         Assertions.assertEquals("Buzz",resultado2);
     }
+    @Test
+    void Testpara6(){
+        //Arrange
+        FizzBuzz fizz = new FizzBuzz();
+        //Act
+        String resultado1 =fizz.calcular(6);
+        //Assert
+        Assertions.assertEquals("Fizz",resultado1);
+    }
+    @Test
+    void Testpara7y8y9(){
+        //Arrange
+        FizzBuzz fizz = new FizzBuzz();
+        //Act
+        String resultado1 =fizz.calcular(7);
+        String resultado2 =fizz.calcular(8);
+        String resultado3 =fizz.calcular(9);
+
+        //Assert
+        Assertions.assertEquals("7",resultado1);
+        Assertions.assertEquals("8",resultado2);
+        Assertions.assertEquals("Fizz",resultado3);
+    }
+    @Test
+    void Testpara10(){
+        //Arrange
+        FizzBuzz fizz = new FizzBuzz();
+        //Act
+        String resultado1 =fizz.calcular(10);
+        //Assert
+        Assertions.assertEquals("Buzz",resultado1);
+    }
 }
