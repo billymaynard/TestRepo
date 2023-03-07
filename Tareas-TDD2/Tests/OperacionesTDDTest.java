@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class OperacionesTDDTest {
     @Test
@@ -27,5 +26,11 @@ class OperacionesTDDTest {
         OperacionesTDD test = new OperacionesTDD();
         int respuesta = test.suma("1,1,2");
         Assertions.assertEquals(4,respuesta);
+    }
+    @Test
+    void TestAdelPunto5(){
+        OperacionesTDD test = new OperacionesTDD();
+        int respuesta = test.suma("1,2,");
+        Assertions.assertEquals(-1,respuesta);
     }
 }

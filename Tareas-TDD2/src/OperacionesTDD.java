@@ -4,10 +4,23 @@ public class OperacionesTDD {
             return 0;
         }
         int intof=0;
+        String number="";
+        int marker=0;
         for (int i = 0; i < nums.length();i++){
+            if (nums.substring(0, 1).equals(",") || nums.substring(nums.length()-1, nums.length()).equals(",")){
+                return -1;
+            }
             String sub = nums.substring(i,i+1);
             if (!sub.equals(",")){
-                intof= intof+Integer.valueOf(sub);
+                number=number+sub;
+                marker=0;
+            }else{
+                if (marker==1){
+                    return -1;
+                }
+                number="";
+                intof=intof+Integer.valueOf(number);
+                marker=1;
             }
         }
         return intof;
