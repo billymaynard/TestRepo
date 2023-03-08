@@ -17,7 +17,11 @@ public class OperacionesTDD {
                 System.out.println("Numeros negativos no validos");
                 return -1;
             }
+            if (intof>1000){
+                System.out.println("Numero superior a 1000 ignorado...");
+            }else {
                 total=total+intof;
+            }
         }
         return total;
     }

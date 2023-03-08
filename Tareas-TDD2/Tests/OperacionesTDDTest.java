@@ -39,4 +39,10 @@ class OperacionesTDDTest {
         int respuesta = test.suma("1,2,-2");
         Assertions.assertEquals(-1,respuesta);
     }
+    @Test
+    void TestAdelPunto7(){
+        OperacionesTDD test = new OperacionesTDD();
+        int respuesta = test.suma("5,1002,7");
+        Assertions.assertEquals(12,respuesta);
+    }
 }
